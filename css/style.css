@@ -382,6 +382,7 @@ footer .socialIcon i {
 footer .copy p {
 	margin-top: 1rem;
 	text-transform: capitalize;
+  color:#000;
 }
 footer .copy p span {
 	margin: 0 5px;
