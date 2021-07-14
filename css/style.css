@@ -21,9 +21,9 @@ html {
 a,
 p,
 button {
-  text-decoration: none;
+	text-decoration: none;
 	font-size: 1.6rem;
-  color: white;
+	color: white;
 }
 
 body {
@@ -38,7 +38,7 @@ button {
 	background-color: var(--main-btn-color);
 	color: white;
 	font-weight: 500;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 img,
@@ -382,12 +382,11 @@ footer .socialIcon i {
 footer .copy p {
 	margin-top: 1rem;
 	text-transform: capitalize;
-  color:#000;
+	color: #000;
 }
 footer .copy p span {
 	margin: 0 5px;
 }
-
 
 /* Small devices (landscape phones, 676px and up) */
 @media (max-width: 676px) {
@@ -403,7 +402,7 @@ footer .copy p span {
 	}
 	header nav .bar .fas {
 		font-size: 2rem;
-    cursor: pointer;
+		cursor: pointer;
 	}
 	header nav ul {
 		display: none;
@@ -414,19 +413,22 @@ footer .copy p span {
 		font-size: 1.2rem;
 	}
 	.hero {
-		height: 100vh;
+		height: auto;
 		display: grid;
 		grid-template-columns: 1fr;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
 	}
+	.hero .heroPlayer{
+		padding-bottom: 5rem;
+	}
 	.hero .title {
 		text-align: left;
-		margin: 0 !important;
+		margin-bottom: 5rem;
 	}
 	.hero .title h1 {
-		font-size: 4rem;
+		font-size: 4.2rem;
 	}
 	.hero .heroPlayer .wrape {
 		width: auto;
