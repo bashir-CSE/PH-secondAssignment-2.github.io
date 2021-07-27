@@ -1,4 +1,3 @@
-
 /*================ news container ================*/
 .news-container {
 	height: auto;
@@ -54,13 +53,23 @@
 }
 
 .news-container .news-card-container .newsCard .newsImg img {
-	transition: transform 0.3s ease-in-out;
+	animation: playersanimation 7s infinite;
 }
 
-.news-container .news-card-container .newsCard .newsImg img:hover {
+/* .news-container .news-card-container .newsCard .newsImg img:hover {
 	transform: scale(1.1);
+} */
+@keyframes playersanimation {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
 }
-
 .news-container .news-card-container .newsCard .newsHeading {
 	margin-top: 2rem;
 	display: flex;

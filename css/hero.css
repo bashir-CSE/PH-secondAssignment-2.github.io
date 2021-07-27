@@ -1,4 +1,3 @@
-
 /* ================hero section================ */
 .hero {
 	height: auto;
@@ -36,9 +35,21 @@
 }
 
 .hero .heroPlayer .wrape img {
-	transition: transform 0.3s ease-in-out;
+	/* transition: transform 0.3s ease-in-out; */
+	animation: zoom-in-zoom-out 5s infinite;
 }
 
-.hero .heroPlayer .wrape img:hover {
+/* .hero .heroPlayer .wrape img:hover {
 	transform: scale(1.1) rotate(20deg);
+} */
+@keyframes zoom-in-zoom-out {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.1, 1.1) rotate(5deg);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
 }
