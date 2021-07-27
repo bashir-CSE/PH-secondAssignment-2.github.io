@@ -1,0 +1,91 @@
+
+/*================ news container ================*/
+.news-container {
+	height: auto;
+	width: auto;
+}
+
+.news-container .news-title {
+	text-align: center;
+	display: block;
+	margin: 5rem 0;
+}
+
+.news-container .news-title h1 {
+	text-align: center;
+	font-size: 4rem;
+	text-transform: capitalize;
+	margin-bottom: 2rem;
+	display: block;
+	position: relative;
+}
+
+.news-container .news-title h1:after {
+	position: absolute;
+	height: 2px;
+	width: 50px;
+	left: 50%;
+	bottom: -6px;
+	content: "";
+	background: #000;
+	transform: translate(-50%, -50%);
+	margin-top: 2rem;
+}
+
+.news-container .news-card-container {
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	grid-gap: 2rem;
+}
+
+.news-container .news-card-container .newsCard {
+	width: 360px;
+	padding: 10px;
+	box-shadow: 1px 1px 20px #d0cecb;
+}
+
+.news-container .news-card-container .newsCard .newsImg {
+	display: block;
+	height: 240px;
+	width: auto !important;
+	overflow: hidden;
+}
+
+.news-container .news-card-container .newsCard .newsImg img {
+	transition: transform 0.3s ease-in-out;
+}
+
+.news-container .news-card-container .newsCard .newsImg img:hover {
+	transform: scale(1.1);
+}
+
+.news-container .news-card-container .newsCard .newsHeading {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.news-container .news-card-container .newsCard .newsHeading button {
+	padding: 1rem 0;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+
+.news-container .news-card-container .newsCard .newsHeading button i {
+	margin-left: 1rem;
+}
+
+.news-container .news-card-container .newsCard .newsHeading span {
+	color: var(--main-p-color);
+	font-size: 1.8rem;
+}
+
+.news-container .news-card-container .newsCard .newsHeading h1 {
+	font-size: 2.8rem;
+	margin: 1rem 0;
+	font-weight: 900;
+	line-height: 40px;
+}

@@ -1,0 +1,44 @@
+
+/* ================hero section================ */
+.hero {
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	height: calc(100vh - 10vh);
+	background-color: var(--main-bg-color);
+	color: white;
+}
+
+.hero .title {
+	text-align: left;
+	margin: 4rem 0;
+}
+
+.hero .title h1 {
+	font-size: 8rem;
+}
+
+.hero .title button {
+	height: 44px;
+	width: 143px;
+	margin-top: 2rem;
+}
+
+.hero .title button i {
+	margin-left: 1rem;
+}
+
+.hero .heroPlayer .wrape {
+	height: 50%;
+	width: 70%;
+	margin-left: auto;
+}
+
+.hero .heroPlayer .wrape img {
+	transition: transform 0.3s ease-in-out;
+}
+
+.hero .heroPlayer .wrape img:hover {
+	transform: scale(1.1) rotate(20deg);
+}

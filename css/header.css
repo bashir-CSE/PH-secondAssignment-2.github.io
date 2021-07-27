@@ -1,0 +1,44 @@
+
+/* ================header section================ */
+header {
+	height: 10vh;
+	width: 100%;
+	line-height: 10vh;
+	background-color: var(--main-bg-color);
+	color: white;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav .bar {
+	display: none;
+}
+
+header nav ul {
+	display: flex;
+	gap: 2rem;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+header nav button {
+	height: 44px;
+	width: 123px;
+}
+
+header nav button i {
+	margin-right: 1rem;
+}
+header nav button a {
+	color: white;
+}

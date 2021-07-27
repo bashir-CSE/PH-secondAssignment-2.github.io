@@ -1,0 +1,52 @@
+
+/* ================custome property=================== */
+:root {
+	--main-bg-color: #2b50ab;
+	--main-btn-color: #cf4dff;
+	--main-p-color: #6c6c6c;
+}
+/* ================default behavior================ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+a,
+p,
+button {
+	text-decoration: none;
+	font-size: 1.6rem;
+	/* color: white; */
+}
+
+body {
+	overflow-x: hidden;
+	font-family: "PT Sans", sans-serif;
+}
+
+button {
+	outline: none;
+	border: none;
+	padding: 0.5rem 1rem;
+	background-color: var(--main-btn-color);
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+img,
+iframe {
+	height: 100%;
+	width: 100%;
+}
+
+section,
+header,
+.container {
+	padding: 0 10rem;
+}

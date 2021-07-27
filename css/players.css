@@ -1,0 +1,73 @@
+
+/* ================players section================ */
+article {
+	margin: 4rem 0;
+}
+
+article h1 {
+	text-align: center;
+	display: block;
+	margin: 5rem 0;
+	font-size: 4rem;
+	text-transform: capitalize;
+	display: block;
+	position: relative;
+}
+
+article h1:after {
+	position: absolute;
+	height: 2px;
+	width: 50px;
+	left: 50%;
+	bottom: -6px;
+	content: "";
+	background: #000;
+	transform: translate(-50%, -50%);
+	margin-top: 9rem;
+}
+
+article .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	place-items: center;
+	grid-row-gap: 4rem;
+}
+
+article .container .card {
+	height: 464px;
+	width: 360px;
+	padding: 10px;
+	box-shadow: 1px 1px 20px #d0cecb;
+}
+
+article .container .card .cardImg {
+	display: block;
+	height: 240px;
+	width: auto !important;
+	overflow: hidden;
+}
+
+article .container .card .cardImg img {
+	transition: transform 0.5s ease-in-out;
+}
+
+article .container .card .cardImg img:hover {
+	transform: scale(1.1);
+}
+
+article .container .card .cardTitle .playersName {
+	font-size: 2.8rem;
+	margin: 2rem 0 1rem 0;
+	font-weight: 900;
+	line-height: 40px;
+	color: black !important;
+}
+
+article .container .card .cardTitle .playersDescip {
+	color: var(--main-p-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+}

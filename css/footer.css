@@ -1,0 +1,42 @@
+
+/* ================footer section================ */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	margin: 10rem 0 2rem 0;
+}
+
+footer .logo {
+	height: 110px;
+	width: 40rem;
+}
+
+footer .socialIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+footer .socialIcon i {
+	height: 40px;
+	background-color: #ece2e2;
+	line-height: 40px;
+	width: 40px;
+	text-align: center;
+	border-radius: 50%;
+	color: var(--main-p-color);
+	font-size: 2rem;
+	cursor: pointer;
+}
+footer .copy p {
+	margin-top: 1rem;
+	text-transform: capitalize;
+	color: #000;
+}
+footer .copy p span {
+	margin: 0 5px;
+}

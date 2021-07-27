@@ -1,398 +1,19 @@
 /*=============== Custome font=============== */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
-/* ================custome property=================== */
-:root {
-	--main-bg-color: #2b50ab;
-	--main-btn-color: #cf4dff;
-	--main-p-color: #6c6c6c;
-}
-/* ================default behavior================ */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 62.5%;
-}
-
-a,
-p,
-button {
-	text-decoration: none;
-	font-size: 1.6rem;
-	color: white;
-}
-
-body {
-	overflow-x: hidden;
-	font-family: "PT Sans", sans-serif;
-}
-
-button {
-	outline: none;
-	border: none;
-	padding: 0.5rem 1rem;
-	background-color: var(--main-btn-color);
-	color: white;
-	font-weight: 500;
-	cursor: pointer;
-}
-
-img,
-iframe {
-	height: 100%;
-	width: 100%;
-}
-
-section,
-header,
-.container {
-	padding: 0 10rem;
-}
-/* ================header section================ */
-header {
-	height: 10vh;
-	width: 100%;
-	line-height: 10vh;
-	background-color: var(--main-bg-color);
-	color: white;
-}
-
-header nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-header nav .bar {
-	display: none;
-}
-
-header nav ul {
-	display: flex;
-	gap: 2rem;
-}
-
-header nav ul li {
-	list-style: none;
-}
-
-header nav ul li a {
-	text-decoration: none;
-	color: white;
-}
-
-header nav button {
-	height: 44px;
-	width: 123px;
-}
-
-header nav button i {
-	margin-right: 1rem;
-}
-
-/* ================hero section================ */
-.hero {
-	height: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	height: calc(100vh - 10vh);
-	background-color: var(--main-bg-color);
-	color: white;
-}
-
-.hero .title {
-	text-align: left;
-	margin: 4rem 0;
-}
-
-.hero .title h1 {
-	font-size: 8rem;
-}
-
-.hero .title button {
-	height: 44px;
-	width: 143px;
-	margin-top: 2rem;
-}
-
-.hero .title button i {
-	margin-left: 1rem;
-}
-
-.hero .heroPlayer .wrape {
-	height: 50%;
-	width: 70%;
-	margin-left: auto;
-}
-
-.hero .heroPlayer .wrape img {
-	transition: transform 0.3s ease-in-out;
-}
-
-.hero .heroPlayer .wrape img:hover {
-	transform: scale(1.1) rotate(20deg);
-}
-/* ================players section================ */
-article {
-	margin: 4rem 0;
-}
-
-article h1 {
-	text-align: center;
-	display: block;
-	margin: 5rem 0;
-	font-size: 4rem;
-	text-transform: capitalize;
-	display: block;
-	position: relative;
-}
-
-article h1:after {
-	position: absolute;
-	height: 2px;
-	width: 50px;
-	left: 50%;
-	bottom: -6px;
-	content: "";
-	background: #000;
-	transform: translate(-50%, -50%);
-	margin-top: 9rem;
-}
-
-article .container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	justify-content: center;
-	align-items: center;
-	place-items: center;
-	grid-row-gap: 4rem;
-}
-
-article .container .card {
-	height: 464px;
-	width: 360px;
-	padding: 10px;
-	box-shadow: 1px 1px 20px #d0cecb;
-}
-
-article .container .card .cardImg {
-	display: block;
-	height: 240px;
-	width: auto !important;
-	overflow: hidden;
-}
-
-article .container .card .cardImg img {
-	transition: transform 0.5s ease-in-out;
-}
-
-article .container .card .cardImg img:hover {
-	transform: scale(1.1);
-}
-
-article .container .card .cardTitle .playersName {
-	font-size: 2.8rem;
-	margin: 2rem 0 1rem 0;
-	font-weight: 900;
-	line-height: 40px;
-}
-
-article .container .card .cardTitle .playersDescip {
-	color: var(--main-p-color);
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 26px;
-}
-/* ================video section================ */
-.video {
-	text-align: center;
-	height: auto;
-	width: 100%;
-	margin: 6rem 0;
-}
-
-.video h1 {
-	text-align: center;
-	display: block;
-	margin: 5rem 0;
-	font-size: 4rem;
-	text-transform: capitalize;
-	display: block;
-	position: relative;
-}
-
-.video h1:after {
-	position: absolute;
-	height: 2px;
-	width: 50px;
-	left: 50%;
-	bottom: -6px;
-	content: "";
-	background: #000;
-	transform: translate(-50%, -50%);
-	margin-top: 1rem;
-}
-
-.video .videoContainer {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 2rem;
-}
-
-.video .videoContainer .video-1 {
-	height: 320px;
-	width: auto;
-	box-shadow: 1px 1px 20px #d0cecb;
-	overflow: hidden;
-}
-
-.video .videoContainer .video-1 iframe {
-	padding: 1rem;
-}
-
-/*================ news container ================*/
-.news-container {
-	height: auto;
-	width: auto;
-}
-
-.news-container .news-title {
-	text-align: center;
-	display: block;
-	margin: 5rem 0;
-}
-
-.news-container .news-title h1 {
-	text-align: center;
-	font-size: 4rem;
-	text-transform: capitalize;
-	margin-bottom: 2rem;
-	display: block;
-	position: relative;
-}
-
-.news-container .news-title h1:after {
-	position: absolute;
-	height: 2px;
-	width: 50px;
-	left: 50%;
-	bottom: -6px;
-	content: "";
-	background: #000;
-	transform: translate(-50%, -50%);
-	margin-top: 2rem;
-}
-
-.news-container .news-card-container {
-	height: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-items: center;
-	grid-gap: 2rem;
-}
-
-.news-container .news-card-container .newsCard {
-	width: 360px;
-	padding: 10px;
-	box-shadow: 1px 1px 20px #d0cecb;
-}
-
-.news-container .news-card-container .newsCard .newsImg {
-	display: block;
-	height: 240px;
-	width: auto !important;
-	overflow: hidden;
-}
-
-.news-container .news-card-container .newsCard .newsImg img {
-	transition: transform 0.3s ease-in-out;
-}
-
-.news-container .news-card-container .newsCard .newsImg img:hover {
-	transform: scale(1.1);
-}
-
-.news-container .news-card-container .newsCard .newsHeading {
-	margin-top: 2rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
-}
-
-.news-container .news-card-container .newsCard .newsHeading button {
-	padding: 1rem 0;
-	font-size: 1.5rem;
-	text-transform: capitalize;
-}
-
-.news-container .news-card-container .newsCard .newsHeading button i {
-	margin-left: 1rem;
-}
-
-.news-container .news-card-container .newsCard .newsHeading span {
-	color: var(--main-p-color);
-	font-size: 1.8rem;
-}
-
-.news-container .news-card-container .newsCard .newsHeading h1 {
-	font-size: 2.8rem;
-	margin: 1rem 0;
-	font-weight: 900;
-	line-height: 40px;
-}
-
-/* ================footer section================ */
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 1rem;
-	margin: 10rem 0 2rem 0;
-}
-
-footer .logo {
-	height: 110px;
-	width: 40rem;
-}
-
-footer .socialIcon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-}
-
-footer .socialIcon i {
-	height: 40px;
-	background-color: #ece2e2;
-	line-height: 40px;
-	width: 40px;
-	text-align: center;
-	border-radius: 50%;
-	color: var(--main-p-color);
-	font-size: 2rem;
-	cursor: pointer;
-}
-footer .copy p {
-	margin-top: 1rem;
-	text-transform: capitalize;
-	color: #000;
-}
-footer .copy p span {
-	margin: 0 5px;
-}
-
-/* Small devices (landscape phones, 676px and up) */
-@media (max-width: 676px) {
+@import url("utility.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("players.css");
+@import url("video.css");
+@import url("news.css");
+@import url("footer.css");
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
 	section,
-	header {
-		padding: 0 2rem !important;
+	header,
+	article {
+		padding: 0 1rem !important;
 	}
 	header {
 		display: block;
@@ -523,7 +144,117 @@ footer .copy p span {
 		cursor: pointer;
 	}
 }
+/* tablate */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+	section,
+	header,
+	.container {
+		padding: 0 4rem;
+	}
+	header nav ul {
+		display: none;
+	}
+	header nav .bar {
+		display: block;
+	}
+	header nav .bar i {
+		font-size: 2.5rem;
+	}
+	.hero {
+		height: calc(70vh - 10vh);
+	}
+	.hero .title h1 {
+		font-size: 4rem;
+	}
+	.hero .heroPlayer .wrape {
+		width: 90%;
+	}
+	article .container {
+		grid-gap: 3rem;
+	}
+	article .container .card {
+		height: 464px;
+		width: auto;
+	}
+	article .container .card .cardTitle .playersName {
+		font-size: 2.5rem;
+		margin: 0;
+	}
+	article .container .card .cardTitle .playersDescip {
+		font-size: 15px;
+	}
+	article .container {
+		grid-template-columns: 1fr 1fr;
+	}
+	.video .videoContainer {
+		grid-template-columns: 1fr;
+	}
+	.news-container .news-card-container {
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+	}
+	.news-container .news-card-container .newsCard {
+		width: auto;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	section,
+	header,
+	.container {
+		padding: 0 5rem;
+	}
+	.hero {
+		height: calc(80vh - 10vh);
+	}
+	.hero .title h1 {
+		font-size: 5rem;
+	}
+	.hero .heroPlayer .wrape {
+		height: auto;
+		width: 100%;
+		margin-left: auto;
+	}
+	article .container {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+	}
+	.video .videoContainer {
+		grid-template-columns: 1fr;
+	}
+	.news-container .news-card-container {
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+	}
+	.news-container .news-card-container .newsCard {
+		width: auto;
+	}
+}
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+	.hero .title h1 {
+		font-size: 7rem;
+	}
+	.hero .heroPlayer .wrape {
+		width: auto;
+	}
+	article .container {
+		grid-gap: 2rem;
+	}
+	.news-container .news-card-container .newsCard {
+		width: auto;
+	}
+	article .container .card {
+		width: auto;
+	}
+
+	article .container .card .cardTitle .playersName {
+		font-size: 2.5rem;
+		margin: 0;
+		color: black !important;
+	}
+}
 /* Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1440px) {
 	section,
